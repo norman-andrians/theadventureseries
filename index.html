@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Adventure Series</title>
+    <link rel="stylesheet" href="./assets/style/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+<body>
+    <div class="watermark">WEEM BADAG</div>
+    <div class="container-main-page">
+        <div class="navbar-container">
+            <div class="navbar-deskop">
+                <div class="search-img"><button type="button" id="search-btn"><img src="./assets/images/icon/search-icon.png" alt="search icon"></button></div>
+                <div class="search-col">
+                    <input type="text" class="search-form" id="search-input" placeholder="Search..">
+                </div>
+                <ul class="navbar-list nav-deskop">
+                    <li><a href="./"><button id="home-btn">Home</button></a></li>
+                    <li><a href="./about"><button id="home-btn">About</button></a></li>
+                    <li><a href="./char"><button id="home-btn">Story</button></a></li>
+                    <li><a href="./gal"><button id="home-btn">Character</button></a></li>
+                </ul>
+            </div>
+            <div class="container-output-search" id="output-row">
+                <div class="close-tab"><button id="close-table-btn" title="close tab"><img src="./assets/images/main-page/close-btn.png" alt="close-btn"></button></div>
+            </div>
+        </div>
+        <div class="container-awal-perkenalan">
+            <div class="awalan-idk">
+                <h1 class="judul">Welcome to<br>Adventure Series Official Page</h1>
+                <div class="awal-btn">
+                    <a href="#container-2"><button>explore</button></a>
+                </div>
+            </div>
+            <div class="main-image">
+                <img src="./assets/images/main-page/main-image-1.png" alt="westerlund" id="img-1">
+                <img src="./assets/images/main-page/main-image-2.png" alt="westerlund" id="img-2">
+                <img src="./assets/images/main-page/main-image-3.png" alt="westerlund" id="img-3">
+            </div>
+            <div class="shape-container"><div id="layer-1"></div></div>
+        </div>
+        <div class="container-kedua" id="container-2">
+            <div class="container-karya karya-cerita">
+                <div class="khj-judul"><h2>Stories</h2></div>
+                <ul class="container-list" id="list-cerita">
+                    
+                </ul>
+            </div>
+            <div class="container-karya karya-karakter">
+                <div class="khj-judul"><h2>Characters</h2></div>
+                <ul class="container-list" id="list-kar">
+                    
+                </ul>
+            </div>
+        </div>
+        <h1 style="padding: 12cm;"></h1>
+    </div>
+    <div class="last-container">
+        <div class="kontak"></div>
+    </div>
+    <script src="./assets/data/story-data.js"></script>
+    <script src="./assets/data/char-data.js"></script>
+    <script src="./assets/script/search-data.js"></script>
+    <script src="./assets/script/main.js"></script>
+</body>
+</html>

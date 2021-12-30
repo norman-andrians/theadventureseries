@@ -1,0 +1,256 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0 auto;
+}
+
+.watermark {
+    z-index: 10;
+    position: fixed;
+    left: 10vw;
+    top: 35vh;
+    font-size: 4cm;
+    text-align: center;
+    color: white;
+    font-family: cursive;
+    opacity: .1;
+}
+
+.container-main-page {
+    margin-top: -12px;
+}
+.search-img, .search-col {
+    float: left;
+}
+.search-img > button {
+    margin-top: 4px;
+    background-color: transparent;
+    border: none;
+    opacity: 1;
+    transition: .2s;
+}
+.search-img > button:hover > img {
+    opacity: .8;
+}
+.search-img > button > img {
+    width: 30px;
+}
+.search-col {
+    transform: translate(0, 20%);
+}
+input.search-form {
+    width: 200%;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 2px solid rgb(61, 61, 61);
+    border-radius: 4px;
+}
+.navbar-container {
+    background: #0F2557;
+    position: fixed;
+    width: 100%;
+    height: 1.6cm;
+    z-index: 1;
+}
+.navbar-list {
+    list-style: none;
+    text-align: right;
+    margin-right: 12px;
+}
+.navbar-list > li {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 6px;
+}
+.navbar-list > li > a > button {
+    width: 3cm;
+    padding: 7px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 15px;
+    border-width: 2px;
+    background-color: transparent;
+    color: white;
+    transition: .2s;
+}
+.navbar-list > li > a > button:hover {
+    background-color: white;
+    color: #0F2557;
+    cursor: pointer;
+}
+.close-tab {
+    position: fixed;
+    top: 8%;
+    right: 1.5%;
+}
+.close-tab > button {
+    padding: 3px;
+    background-color: transparent;
+    border-color: white;
+    border-style: solid;
+    width: 30px;
+    height: 30px;
+}
+.close-tab > button:hover {
+    cursor: pointer;
+    border-color: rgba(255, 255, 255, .7);
+}
+.close-tab > button > img {
+    width: 100%;
+}
+.container-output-search {
+    margin: -10px 0;
+    padding: 10px;
+    background-color: #0F2557;
+    overflow-y: scroll;
+    height: 89vh;
+}
+#output-row {
+    display: none;
+}
+.output-table > a > button {
+    background-color: #384b79;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    transition: .2;
+}
+.output-table > a > button:hover {
+    background-color: #304474;
+}
+.type-text-search {
+    color: white;
+}
+.type-text-search > #title-sc {
+    font-size: large;
+    margin-bottom: 5px;
+}
+.output-table > a > button > img {
+    width: 2cm;
+    float: left;
+    margin-right: 14px;
+    background-color: #acb5ca;
+}
+.container-awal-perkenalan {
+    background: #0F2557;
+    height: 100vh;
+    padding-bottom: 12px;
+}
+.awalan-idk {
+    color: white;
+    text-align: center;
+    padding-top: 35vh;
+    z-index: -1;
+    animation: title-anim 3s;
+}
+.awal-btn button {
+    font-weight: bold;
+    font-size: large;
+    border-style: solid;
+    border-color: white;
+    border-width: 3px;
+    background-color: transparent;
+    color: white;
+    width: 4cm;
+    padding: 10px;
+    transition: .2s;
+    animation: btn-anim-f 3s;
+}
+.awal-btn button:hover {
+    background-color: white;
+    color: #0F2557;
+    cursor: pointer;
+}
+.judul {
+    font-size: 300%;
+    font-family: 'Noto Sans', sans-serif;
+}
+@keyframes title-anim {
+    0% { color: transparent; padding-top: 110vw; }
+    25% { padding-top: 110vh; }
+    60% { color: transparent; }
+}
+@keyframes btn-anim-f {
+    60% { color: transparent; border-color: transparent;}
+}
+.main-image > img {
+    position: absolute;
+    -webkit-mask-image: linear-gradient(black, black, transparent);
+    mask-image: linear-gradient(black, black, transparent);
+}
+img#img-1 {
+    width: 12cm; left: 200px; bottom: -10px;
+    animation: img-anim-1 2.5s;
+}
+img#img-2 {
+    width: 12cm; left: -50px; bottom: -10px;
+    animation: img-anim-2 2.5s;
+}
+img#img-3 {
+    width: 8cm; right: 0px; bottom: -10px;
+    animation: img-anim-3 2.5s;
+}
+
+@keyframes img-anim-1 {
+    0% { left: -20vw; }
+    60% { left: 240px; }
+}
+@keyframes img-anim-2 {
+    0% { left: -20vw; }
+    60% { left: -40px; }
+}
+@keyframes img-anim-3 {
+    0% { right: -20vw; }
+    60% { right: 10px; }
+}
+
+.container-kedua {
+    background-color: #193a86;
+    margin-top: -1px;
+    padding: 25px 40px;
+}
+.khj-judul > h2 {
+    color: white;
+    font-size: xx-large;
+}
+.container-list {
+    list-style: none;
+    margin-left: -20px;
+}
+.container-list > li {
+    display: inline;
+    margin-right: 4px;
+}
+.container-list > li > a, .output-table > a {
+    text-decoration: none;
+}
+.container-list > li > a > button {
+    width: 24%;
+    padding: 4px;
+    color: white;
+    background-color: #08183d;
+    border: none;
+    transition: .2s;
+}
+.container-list > li > a > button, .container-list > li > a > button > img {
+    position: relative;
+}
+.container-list > li > a > button > img {
+    width: 100%;
+    mask-image: linear-gradient(black, black, transparent);
+    -webkit-mask-image: linear-gradient(black, black, transparent);
+    background-color: #acb5ca;
+}
+.container-list > li > a > button:hover {
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, .4);
+    cursor: pointer;
+}
+.container-list > li > a > button > span {
+    width: 80%;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
