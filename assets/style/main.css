@@ -61,7 +61,7 @@ input.search-form {
 .navbar-list > li {
     display: inline-block;
     margin-left: 20px;
-    margin-top: 6px;
+    margin-top: 4px;
 }
 .navbar-list > li > a > button {
     width: 3cm;
@@ -208,7 +208,6 @@ img#img-3 {
 
 .container-kedua {
     background-color: #193a86;
-    margin-top: -1px;
     padding: 25px 40px;
 }
 .khj-judul > h2 {
@@ -253,4 +252,22 @@ img#img-3 {
     bottom: 20px;
     left: 50%;
     transform: translate(-50%, 0);
+}
+
+@media screen and (max-width: 930px) {
+    input.search-form {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .watermark  {
+        font-size: 1cm;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .judul {
+        font-size: xx-large;
+    }
 }
