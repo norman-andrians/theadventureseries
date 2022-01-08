@@ -141,7 +141,7 @@ input.search-form {
 .awalan-idk {
     color: white;
     text-align: center;
-    padding-top: 35vh;
+    padding-top: 40vh;
     z-index: -1;
     animation: title-anim 3s;
 }
@@ -168,8 +168,8 @@ input.search-form {
     font-family: 'Noto Sans', sans-serif;
 }
 @keyframes title-anim {
-    0% { color: transparent; padding-top: 110vw; }
-    25% { padding-top: 110vh; }
+    0% { color: transparent; transform: translateY(-120vh); }
+    25% { transform: translateY(-120vh); }
     60% { color: transparent; }
 }
 @keyframes btn-anim-f {
@@ -213,10 +213,13 @@ img#img-3 {
 .khj-judul > h2 {
     color: white;
     font-size: xx-large;
+    font-family: 'PT Sans', sans-serif;
+    letter-spacing: 2px;
 }
 .container-list {
     list-style: none;
     margin-left: -20px;
+    padding-left: 14px;
 }
 .container-list > li {
     display: inline;
@@ -269,5 +272,11 @@ img#img-3 {
 @media screen and (max-width: 680px) {
     .judul {
         font-size: xx-large;
+    }
+    .container-list > li > a > button {
+        width: 48.82%;
+    }
+    .awalan-idk {
+        padding-top: 45vh;
     }
 }
