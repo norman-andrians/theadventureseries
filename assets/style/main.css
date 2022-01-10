@@ -147,14 +147,14 @@ input.search-form {
 }
 .awal-btn button {
     font-weight: bold;
-    font-size: large;
+    font-size: x-large;
     border-style: solid;
     border-color: white;
     border-width: 3px;
     background-color: transparent;
     color: white;
-    width: 4cm;
-    padding: 10px;
+    width: 6cm;
+    padding: 14px;
     transition: .2s;
     animation: btn-anim-f 3s;
 }
@@ -164,7 +164,7 @@ input.search-form {
     cursor: pointer;
 }
 .judul {
-    font-size: 300%;
+    font-size: 350%;
     font-family: 'Noto Sans', sans-serif;
 }
 @keyframes title-anim {
@@ -208,11 +208,12 @@ img#img-3 {
 
 .container-kedua {
     background-color: #193a86;
-    padding: 25px 40px;
+    padding: 65px 100px;
+    margin-bottom: -20px;
 }
 .khj-judul > h2 {
     color: white;
-    font-size: xx-large;
+    font-size: 1cm;
     font-family: 'PT Sans', sans-serif;
     letter-spacing: 2px;
 }
@@ -220,6 +221,7 @@ img#img-3 {
     list-style: none;
     margin-left: -20px;
     padding-left: 14px;
+    font-size: x-large;
 }
 .container-list > li {
     display: inline;
@@ -229,7 +231,7 @@ img#img-3 {
     text-decoration: none;
 }
 .container-list > li > a > button {
-    width: 24%;
+    width: 19%;
     padding: 4px;
     color: white;
     background-color: #08183d;
@@ -257,9 +259,48 @@ img#img-3 {
     transform: translate(-50%, 0);
 }
 
+.last-container {
+    background-color: rgb(33, 38, 58);
+    padding: 80px;
+}
+.last-container h3 {
+    color: white;
+    font-size: xx-large;
+}
+.last-container > div {
+    vertical-align: top;
+    display: inline-block;
+    margin-right: 2cm;
+}
+.last-container a {
+    text-decoration: none;
+    color: rgb(139, 180, 255);
+    font-size: larger;
+}
+.last-container a:hover {
+    text-decoration: underline;
+    color: rgb(60, 128, 255);
+}
+.last-container div {
+    margin-bottom: 6px;
+}
+
+
+@media screen and (max-width: 1280px) {
+    .judul {
+        font-size: 300%;
+    }
+    .container-list > li > a > button {
+        width: 24%;
+    }
+}
+
 @media screen and (max-width: 930px) {
     input.search-form {
         display: none;
+    }
+    .container-kedua {
+        padding: 15px 40px;
     }
 }
 
