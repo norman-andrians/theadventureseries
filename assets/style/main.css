@@ -141,20 +141,21 @@ input.search-form {
 .awalan-idk {
     color: white;
     text-align: center;
-    padding-top: 40vh;
+    padding-top: 38vh;
     z-index: -1;
     animation: title-anim 3s;
 }
 .awal-btn button {
     font-weight: bold;
-    font-size: x-large;
+    font-size: large;
+    font-family: 'Lato', sans-serif;
     border-style: solid;
     border-color: white;
     border-width: 3px;
     background-color: transparent;
     color: white;
-    width: 6cm;
-    padding: 14px;
+    width: 4cm;
+    padding: 10px;
     transition: .2s;
     animation: btn-anim-f 3s;
 }
@@ -164,7 +165,8 @@ input.search-form {
     cursor: pointer;
 }
 .judul {
-    font-size: 350%;
+    margin: 20px 80px;
+    font-size: 280%;
     font-family: 'Noto Sans', sans-serif;
 }
 @keyframes title-anim {
@@ -208,20 +210,18 @@ img#img-3 {
 
 .container-kedua {
     background-color: #193a86;
-    padding: 65px 100px;
+    padding: 55px 80px 100px 80px;
     margin-bottom: -20px;
 }
 .khj-judul > h2 {
     color: white;
-    font-size: 1cm;
-    font-family: 'PT Sans', sans-serif;
-    letter-spacing: 2px;
+    font-size: x-large;
+    font-family: 'Rubik', sans-serif;
 }
 .container-list {
     list-style: none;
     margin-left: -20px;
     padding-left: 14px;
-    font-size: x-large;
 }
 .container-list > li {
     display: inline;
@@ -236,6 +236,7 @@ img#img-3 {
     color: white;
     background-color: #08183d;
     border: none;
+    font-family: 'Lato', sans-serif;
     transition: .2s;
 }
 .container-list > li > a > button, .container-list > li > a > button > img {
@@ -265,7 +266,8 @@ img#img-3 {
 }
 .last-container h3 {
     color: white;
-    font-size: xx-large;
+    font-size: large;
+    font-family: 'Rubik', sans-serif;
 }
 .last-container > div {
     vertical-align: top;
@@ -275,7 +277,8 @@ img#img-3 {
 .last-container a {
     text-decoration: none;
     color: rgb(139, 180, 255);
-    font-size: larger;
+    font-size: medium;
+    font-family: 'Lato', sans-serif;
 }
 .last-container a:hover {
     text-decoration: underline;
@@ -299,14 +302,17 @@ img#img-3 {
     input.search-form {
         display: none;
     }
-    .container-kedua {
-        padding: 15px 40px;
-    }
 }
 
 @media screen and (max-width: 920px) {
     .watermark  {
         font-size: 1cm;
+    }
+    .container-kedua {
+        padding: 25px 80px 60px 60px;
+    }
+    .last-container {
+        padding: 40px;
     }
 }
 
@@ -319,5 +325,17 @@ img#img-3 {
     }
     .awalan-idk {
         padding-top: 45vh;
+    }
+    .container-kedua {
+        padding: 15px 40px 45px 40px;
+    }
+    .last-container {
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container-list > li > a > button {
+        width: 48%;
     }
 }
