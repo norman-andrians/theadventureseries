@@ -53,6 +53,27 @@ input.search-form {
     height: 1.6cm;
     z-index: 1;
 }
+.nav-mobile {
+    display: none;
+}
+.nav-mobile {
+    margin-top: 20px;
+    margin-right: 15px;
+}
+.nav-mobile-row {
+    text-align: right;
+}
+#nav-mobile-btn {
+    background-color: transparent;
+    border: none;
+}
+#nav-mobile-btn > div {
+    width: 30px;
+    height: 4px;
+    margin: 4px 0;
+    background-color: white;
+    border-radius: 5px;
+}
 .navbar-list {
     list-style: none;
     text-align: right;
@@ -62,6 +83,10 @@ input.search-form {
     display: inline-block;
     margin-left: 20px;
     margin-top: 4px;
+}
+.navbar-list > li > a > button {
+    font-size: small;
+    font-family: 'Rubik', sans-serif;
 }
 .navbar-list > li > a > button {
     width: 3cm;
@@ -78,6 +103,62 @@ input.search-form {
     background-color: white;
     color: #0F2557;
     cursor: pointer;
+}
+.navbar-mob-pre-container {
+    width: 100vw;
+    height: 100vh;
+}
+.navbar-mob-container {
+    width: 80vw;
+    height: 100vh;
+    background-color: #091329;
+    text-align: center;
+    position: absolute;
+    right: -80vw;
+}
+
+@keyframes navmob-anim-in {
+    from {
+        right: -80px;
+    }
+    to {
+        right: 0;
+    }
+}
+
+.navbar-mob-rows {
+    margin-top: 18%;
+    height: 100%;
+}
+.navbar-mob-rows > img {
+    width: 60%;
+}
+.navbar-list-mobile {
+    padding: 0;
+    margin-top: 18%;
+    height: 100%;
+    background-color: #1b3269;
+    list-style: none;
+}
+.navbar-list-mobile button {
+    color: white;
+    width: 100%;
+    padding: 22px 22px 22px 35px;
+    background-color: #213a77;
+    font-size: x-large;
+    text-align: left;
+    border-style: none none none solid;
+    border-color: #4c75d4;
+    border-left-color: transparent;
+    border-width: 0 0 3px 10px;
+    transition-duration: .2s;
+}
+.navbar-list-mobile button:hover {
+    background-color: #4c75d4;
+}
+#arl button {
+    border-style: none none none solid;
+    border-left-color: #4c75d4;
 }
 .close-tab {
     position: fixed;
@@ -313,6 +394,18 @@ img#img-3 {
     }
     .last-container {
         padding: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-deskop {
+        display: none;
+    }
+    .nav-mobile {
+        display: block;
+    }
+    .search-img > button {
+        margin-top: 0;
     }
 }
 
