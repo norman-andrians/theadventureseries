@@ -4,13 +4,18 @@ let anim;
 
 const navBtn = document.getElementById("nav-mobile-btn");
 const navContainer = document.getElementById("navcon");
+const navBg = document.getElementById("precon");
 
 navBtn.addEventListener('click', function() {
+    clearInterval(anim);
     if (shownav == false) {
-        anim = setInterval(moveIn, 5);
+        navBg.style.display = "block";
+        navBg.style.backgroundColor = "rgba(0, 0, 0, .4)";
+        anim = setInterval(moveIn, 2);
     }
     else if (shownav == true) {
-        anim = setInterval(moveOut, 5);
+        navBg.style.backgroundColor = "transparent";
+        anim = setInterval(moveOut, 2);
     }
 });
 
@@ -26,9 +31,10 @@ function moveIn() {
 }
 
 function moveOut() {
-    if (pos >= -80) {
+    if (pos <= -80) {
         shownav = false;
         clearInterval(anim);
+        navBg.style.display = "none";
     }
     else {
         pos--;
