@@ -65,6 +65,9 @@ input.search-form {
 }
 #nav-mobile-btn {
     background-color: transparent;
+    width: 38px;
+    height: 32px;
+    padding: 2px;
     border: none;
 }
 #nav-mobile-btn > div {
