@@ -54,6 +54,7 @@ function listingSearchDat(nameOfDat) {
 
 searchInput.addEventListener("keyup", function() {
     searchOutput.style.display = "block";
+    searchData();
     showtable = false;
 })
 

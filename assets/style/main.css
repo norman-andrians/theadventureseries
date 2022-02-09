@@ -167,8 +167,8 @@ input.search-form {
 }
 .close-tab {
     position: fixed;
-    top: 8%;
-    right: 1.5%;
+    top: 58px;
+    right: 10px;
 }
 .close-tab > button {
     padding: 3px;
@@ -227,7 +227,7 @@ input.search-form {
 .awalan-idk {
     color: white;
     text-align: center;
-    padding-top: 38vh;
+    padding-top: 40vh;
     z-index: -1;
     animation: title-anim 3s;
 }
@@ -385,9 +385,6 @@ img#img-3 {
 }
 
 @media screen and (max-width: 930px) {
-    input.search-form {
-        display: none;
-    }
 }
 
 @media screen and (max-width: 920px) {
@@ -409,8 +406,21 @@ img#img-3 {
     .nav-mobile {
         display: block;
     }
+    .search-col {
+        width: 30%;
+    }
+    input.search-form {
+        padding: 7px;
+        margin-top: -6px;
+    }
     .search-img > button {
         margin-top: 0;
+    }
+    .container-output-search {
+        margin: 0;
+        padding: 10px;
+        width: 100vw;
+        height: 89vh;
     }
 }
 
@@ -432,8 +442,20 @@ img#img-3 {
     }
 }
 
+@media screen and (max-width: 600px) { .awalan-idk { padding-top: 43vh; } }
+
 @media screen and (max-width: 600px) {
     .container-list > li > a > button {
         width: 48%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .judul {
+        font-size: x-large;
+    }
+    .awal-btn button {
+        padding: 7px;
+        font-size: normal;
     }
 }
