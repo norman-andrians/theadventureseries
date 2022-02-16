@@ -70,3 +70,17 @@
         font-size: large;
     }
 }
+@media screen and (max-width: 480px) {
+    .container-utama {
+        padding: 1cm 1cm;
+    }
+    .container-utama > h1 {
+        font-size: x-large;
+    }
+    .about-img {
+        padding: 100px 0 80px 0;
+    }
+    .isi {
+        font-size: normal;
+    }
+}
