@@ -1,0 +1,72 @@
+.container-utama {
+    padding: 1.5cm 12cm;
+    background-color: #2b5db9;
+    color: white;
+}
+.container-utama > h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 50px;
+}
+.about-img {
+    text-align: center;
+    padding: 120px 0;
+}
+.about-img img {
+    width: 50%;
+}
+.isi {
+    font-family: 'Roboto', sans-serif;
+    font-size: xx-large;
+}
+.isi > div {
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1920px) {
+    .about-img img {
+        width: 80%;
+    }
+    .container-utama {
+        padding: 1.5cm 8cm;
+    }
+    .isi {
+        font-size: x-large;
+    }
+}
+@media screen and (max-width: 1366px) {
+    .container-utama {
+        padding: 1.5cm 4cm;
+    }
+    .isi {
+        font-size: large;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .container-utama {
+        padding: 1.5cm 3cm;
+    }
+    .isi {
+        font-size: x-large;
+    }
+}
+@media screen and (max-width: 920px) {
+    .about-img img {
+        width: 85%;
+    }
+}
+@media screen and (max-width: 720px) {
+    .container-utama > h1 {
+        font-size: xx-large;
+    }
+}
+@media screen and (max-width: 680px) {
+    .container-utama {
+        padding: 1cm 2cm;
+    }
+    .about-img {
+        padding: 100px 0 80px 0;
+    }
+    .isi {
+        font-size: large;
+    }
+}

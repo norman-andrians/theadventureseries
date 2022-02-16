@@ -1,0 +1,174 @@
+.container-awal-perkenalan {
+    background: #0F2557;
+    height: 100vh;
+    padding-bottom: 12px;
+}
+.awalan-idk {
+    color: white;
+    text-align: center;
+    padding-top: 40vh;
+    z-index: -1;
+    animation: title-anim 3s;
+}
+.awal-btn button {
+    font-weight: bold;
+    font-size: large;
+    font-family: 'Lato', sans-serif;
+    border-style: solid;
+    border-color: white;
+    border-width: 3px;
+    background-color: transparent;
+    color: white;
+    width: 4cm;
+    padding: 10px;
+    transition: .2s;
+    animation: btn-anim-f 3s;
+}
+.awal-btn button:hover {
+    background-color: white;
+    color: #0F2557;
+    cursor: pointer;
+}
+.judul {
+    margin: 20px 80px;
+    font-size: 280%;
+    font-family: 'Noto Sans', sans-serif;
+}
+@keyframes title-anim {
+    0% { color: transparent; transform: translateY(-120vh); }
+    25% { transform: translateY(-120vh); }
+    60% { color: transparent; }
+}
+@keyframes btn-anim-f {
+    60% { color: transparent; border-color: transparent;}
+}
+.main-image > img {
+    position: absolute;
+    -webkit-mask-image: linear-gradient(black, black, transparent);
+    mask-image: linear-gradient(black, black, transparent);
+}
+img#img-1 {
+    width: 12cm; left: 200px; bottom: -10px;
+    animation: img-anim-1 2.5s;
+}
+img#img-2 {
+    width: 12cm; left: -50px; bottom: -10px;
+    animation: img-anim-2 2.5s;
+}
+img#img-3 {
+    width: 8cm; right: 0px; bottom: -10px;
+    animation: img-anim-3 2.5s;
+}
+
+@keyframes img-anim-1 {
+    0% { left: -20vw; }
+    60% { left: 240px; }
+}
+@keyframes img-anim-2 {
+    0% { left: -20vw; }
+    60% { left: -40px; }
+}
+@keyframes img-anim-3 {
+    0% { right: -20vw; }
+    60% { right: 10px; }
+}
+
+.container-kedua {
+    background-color: #193a86;
+    padding: 55px 80px 100px 80px;
+    margin-bottom: -20px;
+}
+.khj-judul > h2 {
+    color: white;
+    font-size: x-large;
+    font-family: 'Rubik', sans-serif;
+}
+.container-list {
+    list-style: none;
+    margin-left: -20px;
+    padding-left: 14px;
+}
+.container-list > li {
+    display: inline;
+    margin-right: 4px;
+}
+.container-list > li > a, .output-table > a {
+    text-decoration: none;
+}
+.container-list > li > a > button {
+    width: 19%;
+    padding: 4px;
+    color: white;
+    background-color: #08183d;
+    border: none;
+    font-family: 'Lato', sans-serif;
+    transition: .2s;
+}
+.container-list > li > a > button, .container-list > li > a > button > img {
+    position: relative;
+}
+.container-list > li > a > button > img {
+    width: 100%;
+    mask-image: linear-gradient(black, black, transparent);
+    -webkit-mask-image: linear-gradient(black, black, transparent);
+    background-color: #acb5ca;
+}
+.container-list > li > a > button:hover {
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, .4);
+    cursor: pointer;
+}
+.container-list > li > a > button > span {
+    width: 80%;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+@media screen and (max-width: 1280px) {
+    .judul {
+        font-size: 300%;
+    }
+    .container-list > li > a > button {
+        width: 24%;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .container-kedua {
+        padding: 25px 80px 60px 60px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .judul {
+        font-size: xx-large;
+    }
+    .container-list > li > a > button {
+        width: 48.82%;
+    }
+    .awalan-idk {
+        padding-top: 45vh;
+    }
+    .container-kedua {
+        padding: 15px 40px 45px 40px;
+    }
+}
+
+@media screen and (max-width: 600px) { .awalan-idk { padding-top: 43vh; } }
+
+@media screen and (max-width: 600px) {
+    .container-list > li > a > button {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .judul {
+        font-size: x-large;
+    }
+    .awal-btn button {
+        padding: 7px;
+        font-size: normal;
+    }
+}
