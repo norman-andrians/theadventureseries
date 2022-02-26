@@ -1,0 +1,196 @@
+.container-utama {
+    padding: 3cm 10cm;
+    background-color: #193a86;
+    color: white;
+}
+.judul {
+    text-align: center;
+    font-family: 'Arvo', sans-serif;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+.judul h1 {
+    margin: 12px 0 50px 0;
+}
+.search-container { text-align: center; width: 100%; }
+.search-col {
+    text-align: left;
+    transform: translate(20%, 0);
+    padding: 0;
+    width: 70%;
+    height: 60px;
+    background-color: transparent;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    border-width: 3px;
+    transition: .2s;
+}
+.search-col > button {
+    left: -1px;
+    background-color: white;
+    box-shadow: none;
+    position: absolute;
+    border: none;
+    float: left;
+    width: 58px;
+    height: 100%;
+    transition: .2s;
+}
+.search-col:hover > button {
+    background-color: rgb(216, 216, 216);
+    cursor: pointer;
+}
+.search-col:hover {
+    border-color: rgb(216, 216, 216);
+}
+.search-col > button > img {
+    width: 80%;
+}
+.search-col input {
+    color: white;
+    margin-top: 2px;
+    border: none;
+    text-indent: 82px;
+    background-color: transparent;
+    font-size: larger;
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+    width: 100%;
+    height: 90%;
+}
+.search-col > input[type=text] {
+    outline: none;
+}
+.search-col input::placeholder {
+    color: white;
+}
+.alpha-button {
+
+    /* ============ */
+    display:  none;
+    /* ============ */
+    
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: 100%;
+    padding-bottom: 4px;
+}
+.alpha-button > a {
+    text-decoration: none;
+}
+.alpha-button > a > button {
+    background-color: transparent;
+    border-style: solid;
+    border-color: white;
+    color: white;
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    transition: .2s;
+}
+.alpha-button > a > button:hover {
+    background-color: white;
+    color: #193a86;
+    cursor: pointer;
+}
+.karya-cerita { margin-top: 200px; }
+.karya-cerita > ul {
+    list-style: none;
+    padding-left: 0;
+}
+.karya-cerita > ul > li {
+    display: inline;
+}
+.karya-cerita > ul > li > a > button {
+    width: 24.7%;
+    padding: 4px;
+    color: white;
+    background-color: #08183d;
+    border: none;
+    font-family: 'Lato', sans-serif;
+    transition: .2s;
+}
+.karya-cerita > ul > li > a > button, .karya-cerita > ul > li > a > button > img {
+    position: relative;
+}
+.karya-cerita > ul > li > a > button > img {
+    width: 100%;
+    mask-image: linear-gradient(
+        black, black, black, black, black,
+        rgba(0,0,0,.7), rgba(0,0,0,.4),
+        transparent, transparent);
+    -webkit-mask-image: linear-gradient(
+        black, black, black, black, black,
+        rgba(0,0,0,.7), rgba(0,0,0,.4),
+        transparent, transparent);
+    background-color: #acb5ca;
+}
+.karya-cerita > ul > li > a > button > div {
+    width: 80%;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+#no-result {
+    text-align: center;
+    padding: 30px 0;
+}
+#no-result h2 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 1600px) {
+    .container-utama {
+        padding: 3cm 4cm;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .search-col {
+        height: 50px;
+    }
+    .search-col input {
+        font-size: large;
+        text-indent: 66px;
+    }
+    .search-col > button {
+        width: 48px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .container-utama {
+        padding: 3cm 1cm;
+    }
+    .judul h1 {
+        margin: 12px 0 30px 0;
+    }
+    .karya-cerita { margin-top: 150px; }
+}
+
+@media screen and (max-width: 640px) {
+    .karya-cerita > ul > li > a > button {
+        width: 49%;
+    }
+    .judul {
+        font-size: xx-large;
+    }
+    .search-col {
+        transform: translate(0, 0);
+        width: 100%;
+    }
+    .karya-cerita { margin-top: 100px; }
+}
+
+@media screen and (max-width: 480px) {
+    .karya-cerita > ul > li > a > button > div {
+        font-size: x-small;
+    }
+}

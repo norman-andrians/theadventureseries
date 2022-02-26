@@ -1,6 +1,6 @@
 .container-utama {
     padding: 1.5cm 12cm;
-    background-color: #2b5db9;
+    background-color: #32589c;
     color: white;
 }
 .container-utama > h1 {
@@ -30,7 +30,7 @@
         padding: 1.5cm 8cm;
     }
     .isi {
-        font-size: x-large;
+        font-size: larger;
     }
 }
 @media screen and (max-width: 1366px) {

@@ -6,6 +6,7 @@ body {
 }
 
 .watermark {
+    display: none;
     z-index: 10;
     position: fixed;
     left: 10vw;
