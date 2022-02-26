@@ -115,6 +115,9 @@
     font-family: 'Lato', sans-serif;
     transition: .2s;
 }
+.karya-cerita > ul > li > a > button:hover {
+    cursor: pointer;
+}
 .karya-cerita > ul > li > a > button, .karya-cerita > ul > li > a > button > img {
     position: relative;
 }
@@ -192,5 +195,8 @@
 @media screen and (max-width: 480px) {
     .karya-cerita > ul > li > a > button > div {
         font-size: x-small;
+    }
+    .judul {
+        font-size: x-large;
     }
 }
