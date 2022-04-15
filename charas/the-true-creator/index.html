@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Adventure - Characters</title>
+    <link rel="icon" type="image/png" href="../../assets/images/the-adventures-logo.png" sizes="32x32"/>
+    <link rel="stylesheet" href="../../assets/style/main.css">
+    <link rel="stylesheet" href="../../assets/style/nav.css">
+    <link rel="stylesheet" href="../../assets/style/page/in-char.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Lato:wght@700&family=Noto+Sans:wght@700&family=Roboto:wght@500&family=Rubik:wght@500&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body onload="loadCharData(0);">
+    <div class="watermark">WEEM BADAG</div>
+    <div class="container-main-page">
+        <div class="navbar-container">
+            <div class="navbar-deskop">
+                <ul class="navbar-list nav-deskop">
+                    <li><a href="../../"><button id="home-btn">Home</button></a></li>
+                    <li><a href="../../about"><button id="home-btn">About</button></a></li>
+                    <li><a href="../../story"><button id="home-btn">Story</button></a></li>
+                    <li><a href="../../char"><button id="home-btn">Character</button></a></li>
+                </ul>
+                <div class="nav-mobile">
+                    <div class="nav-mobile-row">
+                        <button id="nav-mobile-btn">
+                            <div class="bar-1"></div>
+                            <div class="bar-2"></div>
+                            <div class="bar-3"></div>
+                        </button>
+                    </div>
+                    <div class="navbar-mob-pre-container" id="precon">
+                        <div class="navbar-mob-container" id="navcon"><br>
+                            <div class="navbar-mob-rows">
+                                <img src="../../assets/images/the-adventures-img.png" alt="the adventure">
+                                <ul class="navbar-list-mobile">
+                                    <li id="nr"><a href="../../"><button>Home</button></a></li>
+                                    <li id="nr"><a href="../../about"><button>About</button></a></li>
+                                    <li id="nr"><a href="../../story"><button>Story</button></a></li>
+                                    <li id="arl"><a href="../../char"><button>Character</button></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-output-search" id="output-row">
+                <div class="close-tab"><button id="close-table-btn" title="close tab"><img src="../../assets/images/main-page/close-btn.png" alt="close-btn"></button></div>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="container-char">
+                <div class="char-h"><h1 class="char-name"></h1></div>
+                <hr>
+                <div class="char-img-1" id="img-char-1"></div>
+                <div class="infobox">
+                    <h2>Character Information</h2>
+                    <table style="border: none;">
+                        <tr><td>Name</td><td>:</td><td class="char-name"></td></tr>
+                        <tr><td>Nickname</td><td>:</td><td id="char-nickname"></td></tr>
+                        <tr><td>Origin</td><td>:</td><td id="char-origin"></td></tr>
+                        <tr><td>Titles</td><td>:</td><td id="char-titles"></td></tr>
+                        <tr><td>Ages</td><td>:</td><td id="char-ages"></td></tr>
+                        <tr><td>Height</td><td>:</td><td id="char-height"></td></tr>
+                        <tr><td>Width</td><td>:</td><td id="char-width"></td></tr>
+                        <tr><td>Gender</td><td>:</td><td id="char-gender"></td></tr>
+                        <tr><td>Species</td><td>:</td><td id="char-species"></td></tr>
+                        <tr><td>Likes</td><td>:</td><td id="char-likes"></td></tr>
+                        <tr><td>Dislikes</td><td>:</td><td id="char-dislikes"></td></tr>
+                        <tr><td>Birthday</td><td>:</td><td id="char-birthday"></td></tr>
+                        <tr><td>Oc Num</td><td>:</td><td id="char-ocnum"></td></tr>
+                        <tr><td>Place</td><td>:</td><td id="char-place"></td></tr>
+                        <tr><td>Affiliate</td><td>:</td><td id="char-affiliate"></td></tr>
+                        <tr><td>Tier Level</td><td>:</td><td id="char-tier"></td></tr>
+                        <tr><td>Ability</td><td>:</td><td>
+                            <ul id="char-ability"></ul>
+                        </td></tr>
+                        <tr><td>Attack Potency</td><td>:</td><td id="char-ap"></td></tr>
+                        <tr><td>Speed Full</td><td>:</td><td id="char-sf"></td></tr>
+                        <tr><td>Lifting Strength</td><td>:</td><td id="char-ls"></td></tr>
+                        <tr><td>Striking Strength</td><td>:</td><td id="char-ss"></td></tr>
+                        <tr><td>Durablity</td><td>:</td><td id="char-durability"></td></tr>
+                        <tr><td>Stamina Equipment</td><td>:</td><td id="char-se"></td></tr>
+                        <tr><td>Notable Attech</td><td>:</td><td>
+                            <ul id="char-na"></ul>
+                        </td></tr>
+                        <tr><td>Intelligence</td><td>:</td><td id="char-intelligence"></td></tr>
+                        <tr><td>Weakness</td><td>:</td><td id="char-weakness"></td></tr>
+                        <!--
+                        <tr><td>First Appear</td><td>:</td><td style="padding-right: 24px;" class="bfeet">Season</td><td class="bfeet">:</td><td id="char-fa-s" class="bfeet"></td></tr>
+                        <tr><td colspan="2"></td><td class="bfeet">Episode</td><td class="bfeet">:</td><td id="char-fa-e" class="bfeet"></td></tr>
+                        <tr><td colspan="2"></td><td id="char-fa-d"></td></tr>
+                        -->
+                    </table>
+                </div>
+                <div class="char-img" id="img-char"></div>
+                <div class="char-info">
+                    <h2>Description</h2>
+                    <article id="char-desc"></article>
+                    <h2>Appearance</h2>
+                    <article id="char-appe"></article>
+                    <h2>First appearance</h2>
+                    <ul id="char-fa"></ul>
+                </div>
+                <hr style="clear: both;">
+            </div>
+        </div>
+    </div>
+    <div class="last-container">
+        <div class="kontak">
+            <h3>Social Media</h3>
+            <div><a href="https://www.facebook.com/AgentSkelemon">Faceboook</a></div>
+        </div>
+        <div class="kategori">
+            <h3>Categories</h3>
+            <div><a href="../story">Stories</a></div>
+            <div><a href="./">Characters</a></div>
+            <div><a href="../gal">Galerry</a></div>
+        </div>
+    </div>
+    <script src="../../assets/script/mobile-nav.js"></script>
+    <script src="../../assets/data/char-data.js"></script>
+    <script src="../../assets/data/character-data.js"></script>
+    <script src="../../assets/script/page/char-single-page.js"></script>
+</body>
+</html>

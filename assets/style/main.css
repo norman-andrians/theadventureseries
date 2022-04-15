@@ -24,6 +24,7 @@ body {
 
 
 .last-container {
+    clear: both;
     background-color: rgb(33, 38, 58);
     padding: 80px;
 }

@@ -1,0 +1,119 @@
+.main-container {
+    background-color: #376396;
+}
+.container-char {
+    background-color: #4e75a1;
+    padding: 4cm 1cm 2cm 1cm;
+    margin: 0 7cm;
+    color: white;
+}
+
+.char-h {
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.char-img-1 { display: none; }
+.char-img { margin-top: 40px;}
+.char-img img { width: 14cm;}
+.infobox {
+    float: right;
+    padding: 20px;
+    width: 50%;
+    background-color: #6e91b9;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.infobox h2 {
+    margin-top: 0;
+    padding: 8px 0;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    background-color: white;
+    color: #6e91b9;
+}
+.infobox td{
+    vertical-align: top;
+    font-family: 'Roboto', sans-serif;
+    padding-right: 20px;
+}
+.infobox ul {
+    padding-inline-start: 0;
+    margin-block-start: 0; margin-block-end: 0;
+    padding-top: 12px;
+    padding-left: 18px;
+    list-style: decimal;
+}
+
+.bfeet {
+    display: inline;
+}
+
+.char-info {
+    width: 14cm;
+}
+.char-info h2 { font-family: 'Noto Sans', sans-serif; }
+.char-info article, .char-info li { font-family: 'Lato', sans-serif; font-size: small; }
+.char-info ul {
+    padding-left: 18px;
+    list-style: decimal;
+}
+.char-info li { padding-left: 5px; }
+
+@media screen and (max-width: 1720px) {
+    .infobox {
+        width: 35%;
+    }
+}
+@media screen and (max-width: 1440px) {
+    .container-char {
+        margin: 0 5cm;
+    }
+}
+@media screen and (max-width: 1366px) {
+    .infobox h2 {
+        font-size: larger;
+    }
+    .infobox {
+        font-size: small;
+        width: 50%;
+    }
+    .char-img img {
+        width: 10cm;
+    }
+    .char-info {
+        width: 10cm;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .container-char {
+        margin: 0 2cm;
+    }
+}
+@media screen and (max-width: 1080px) {
+    .infobox {
+        width: 40%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container-char { margin: 0; }
+    .infobox {
+        float: none;
+        width: auto;
+    }
+    .char-img { display: none; }
+    .char-img-1 {
+        display: block;
+        width: auto;
+    }
+    .char-img-1 img { width: 100%; margin-top: 30px; }
+    .char-h {
+        font-size: large;
+    }
+    .char-info { width: auto; }
+}
+@media screen and (max-width: 530px) {
+    .char-h {
+        font-size: normal;
+    }
+}

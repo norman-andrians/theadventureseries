@@ -9,7 +9,7 @@ let charData = {
         "./assets/images/main-page/characters/westerlund.png",
     ],
     "link" : [
-        "./char/the-true-creator",
-        "./char/westerlund"
+        "./charas/the-true-creator",
+        "./charas/westerlund"
     ]
 }
