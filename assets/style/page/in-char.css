@@ -96,7 +96,9 @@
     }
 }
 @media screen and (max-width: 768px) {
-    .container-char { margin: 0; }
+    .container-char {
+        margin: 0;
+    }
     .infobox {
         float: none;
         width: auto;
@@ -113,6 +115,9 @@
     .char-info { width: auto; }
 }
 @media screen and (max-width: 530px) {
+    .container-char {
+        padding: 3cm .3cm 2cm .3cm;
+    }
     .char-h {
         font-size: normal;
     }
