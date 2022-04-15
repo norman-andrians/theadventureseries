@@ -30,6 +30,7 @@ function loadCharData(index) {
 
     const nameElement = document.querySelectorAll('.char-name');
 
+    const affElement = document.getElementById('char-affiliate');
     const abilityElement = document.getElementById('char-ability');
     const naElement = document.getElementById('char-na');
 
@@ -42,13 +43,17 @@ function loadCharData(index) {
     abilityElement.innerHTML = '';
     naElement.innerHTML = '';
 
-    descElement.innerHTML = characterData[index].description;
-    appElement.innerHTML = characterData[index].appearance;
+    descElement.innerHTML = '';
+    appElement.innerHTML = '';
     faElement.innerHTML = '';
 
     for (let i = 0; i < nameElement.length; i++)
     {
         nameElement[i].innerHTML = characterData[index].name;
+    }
+
+    for (let i = 0; i < characterData[index].Affiliate.length; i++) {
+        affElement.innerHTML += '<li>'+characterData[index].Affiliate[i]+'</li>\n';
     }
 
     for (let i = 0; i < characterData[index].abiility.length; i++) {
@@ -61,6 +66,14 @@ function loadCharData(index) {
 
     for (let i = 0; i < characterData[index].first_appear.length; i++) {
         faElement.innerHTML += '<li>'+characterData[index].first_appear[i]+'</li>\n';
+    }
+
+    for (let i = 0; i < characterData[index].description.length; i++) {
+        descElement.innerHTML += '<p>'+characterData[index].description[i]+'</p>\n';
+    }
+
+    for (let i = 0; i < characterData[index].appearance.length; i++) {
+        appElement.innerHTML += '<p>'+characterData[index].appearance[i]+'</p>\n';
     }
 
     loadElementDat(index);
@@ -80,7 +93,6 @@ function loadElementDat(index) {
     document.getElementById(dataElement[10]).innerHTML = characterData[index].birthday;
     document.getElementById(dataElement[11]).innerHTML = characterData[index].oc_num;
     document.getElementById(dataElement[12]).innerHTML = characterData[index].place;
-    document.getElementById(dataElement[13]).innerHTML = characterData[index].Affiliate;
     document.getElementById(dataElement[14]).innerHTML = characterData[index].tier_level;
     document.getElementById(dataElement[15]).innerHTML = characterData[index].attack_potency;
     document.getElementById(dataElement[16]).innerHTML = characterData[index].speed_full;

@@ -35,14 +35,14 @@
 .infobox td{
     vertical-align: top;
     font-family: 'Roboto', sans-serif;
+    padding-top: 2px;
     padding-right: 20px;
 }
 .infobox ul {
     padding-inline-start: 0;
     margin-block-start: 0; margin-block-end: 0;
-    padding-top: 12px;
     padding-left: 18px;
-    list-style: decimal;
+    list-style: square;
 }
 
 .bfeet {
